@@ -66,3 +66,18 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+### Dockerize app
+
+To dockerize this react app run the following comands.
+
+```
+docker build  -t reactdocker:prod // build production image
+
+docker run -it -p 80:80 --rm reactdocker:prod // run production image
+```
+
+*resources:*
+- [https://mherman.org/blog/dockerizing-a-react-app/](https://mherman.org/blog/dockerizing-a-react-app/)
+- [https://dev.to/ziv/dockerize-create-react-app-in-3-minutes-3om3](https://dev.to/ziv/dockerize-create-react-app-in-3-minutes-3om3)
